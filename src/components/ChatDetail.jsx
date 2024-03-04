@@ -85,7 +85,7 @@ function ChatDetail() {
         <div className="flex items-center ">
           {/* profile pic */}
           <img
-            src={pic1}
+            src={selectedContact.pp}
             alt="profile pic"
             className="rounded-full w-[40px] h-[45px] mr-5"
           ></img>
