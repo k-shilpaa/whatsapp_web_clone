@@ -36,7 +36,6 @@ function Chats({ filter, archived, searchQuery }) {
     }
 
     return () => {
-      console.log("destroy is called");
       if (searchQuery.length === 1) {
         setChats(chatsData);
       }
