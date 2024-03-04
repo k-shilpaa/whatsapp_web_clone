@@ -1,6 +1,6 @@
-import WhatsApp from './pages/WhatsApp';
+import WhatsApp from "./pages/WhatsApp";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return <WhatsApp />;

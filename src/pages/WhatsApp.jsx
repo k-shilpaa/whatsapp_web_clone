@@ -12,13 +12,16 @@ function WhatsApp() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    console.log("loading screen");
+    const id = setTimeout(() => {
       if (progress >= 100) setLoading(false);
       else {
-        const increment = Math.floor(Math.random() * 10) + 3;
+        const increment = Math.floor(Math.random() * (10 + 1)) + 7;
         setProgress(progress + increment);
       }
     }, 300);
+
+    return () => clearTimeout(id);
   }, [progress]);
 
   const [selectedContact, setSelectedContact] = useState(chatsData[0]);
@@ -26,7 +29,7 @@ function WhatsApp() {
   return (
     <>
       {loading ? (
-        <LoadingScreen />
+        <LoadingScreen progress={progress} />
       ) : (
         <AppContext.Provider value={{ selectedContact, setSelectedContact }}>
           <div className="w-screen h-screen overflow-hidden">

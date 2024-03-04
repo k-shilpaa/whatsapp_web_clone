@@ -25,9 +25,10 @@ function ChatDetail() {
   const bottomRef = useRef(null);
 
   useEffect(() => {
-    setMessages(messageData.filter(
-      (msg) => msg.contact === selectedContact.contact
-    )[0].messages);
+    setMessages(
+      messageData.filter((msg) => msg.contact === selectedContact.contact)[0]
+        .messages
+    );
   }, [selectedContact]);
 
   const handleInputChange = () => {

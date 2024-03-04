@@ -3,21 +3,17 @@ import { AppContext } from "../pages/WhatsApp";
 import { chatsData } from "../data/whatsapp";
 
 function Chat({ pp, contact, msg, time, unreadMsgs }) {
-  const { selectedContact , setSelectedContact } = useContext(AppContext);
+  const { selectedContact, setSelectedContact } = useContext(AppContext);
 
   const handleSelect = () => {
-    const selContact = chatsData.filter(
-      (chat) => chat.contact === contact
-    )[0];
+    const selContact = chatsData.filter((chat) => chat.contact === contact)[0];
     setSelectedContact(selContact);
   };
 
   return (
     <div
       className={`flex justify-between items-center cursor-pointer w-100 h-[85px] px-3 hover:bg-[#202d33] 
-      ${
-        selectedContact.contact === contact ? "bg-[#202d33]" : ""
-      }`}
+      ${selectedContact.contact === contact ? "bg-[#202d33]" : ""}`}
       onClick={handleSelect}
     >
       {/* profile pic*/}
