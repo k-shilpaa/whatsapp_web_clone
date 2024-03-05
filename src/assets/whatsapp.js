@@ -9,6 +9,8 @@ import chat8 from "./images/chat8.jpg";
 import chat9 from "./images/chat9.jpg";
 import chat10 from "./images/chat10.jpg";
 import chat11 from "./images/chat11.png";
+import code from "./images/code.jpg";
+import code2 from "./images/code2.jpg";
 
 export {
   pic1,
@@ -22,4 +24,6 @@ export {
   chat9,
   chat10,
   chat11,
+  code,
+  code2
 };
