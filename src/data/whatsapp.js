@@ -156,21 +156,7 @@ export const messageData = [
         time: "10:50 am",
         sent: false,
       },
-      {
-        msg: "Yes, I'm experimenting with media queries, but it's still a work in progress. Hopefully, I'll figure it out soon! 🤞",
-        time: "10:55 am",
-        sent: true,
-      },
-      {
-        msg: "Keep at it! You're doing great! If you need any help, feel free to ask. We're in this together! 👨‍💻👩‍💻",
-        time: "11:00 am",
-        sent: false,
-      },
-      {
-        msg: "Thanks! I appreciate the support. Let's code together soon! 🚀",
-        time: "11:05 am",
-        sent: true,
-      },
+
       {
         img: code,
         time: "11:11 am",
@@ -186,7 +172,7 @@ export const messageData = [
         img: code2,
         time: "11:22 am",
         sent: true,
-      }
+      },
     ],
   },
   {
